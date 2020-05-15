@@ -4976,9 +4976,14 @@ a.close.disabled {
 .carousel {
   position: relative; }
 
+  .owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+    -ms-touch-action: auto;
+        touch-action: auto;
+}
+
 .carousel.pointer-event {
-  -ms-touch-action: auto;
-  touch-action: auto; }
+  -ms-touch-action: pan-y;
+  touch-action: pan-y; }
 
 .carousel-inner {
   position: relative;
